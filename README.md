@@ -1,0 +1,9 @@
+Thank you for your interest in the model data behind the paper "Impacts of Environmental Conditions and Ice Nuclei Recycling on Arctic Mixed-Phase Cloud Properties", to be submitted to the journal "Atmospheric Chemistry and Physics" published by Copernicus Publications.
+
+The following is a quick set of instructions describing how to use the provided Jupyter notebook to recreate the figures and quantititative analysis seen in the paper.
+
+1. Set up a python environment (or use one that you already have set up), with a python version newer than 3.10. Make sure that you have jupyter, numpy, xarray, matplotlib, and metpy installed in this environment. The plots are currently set up to use the Liberation Serif font. If this font is not present on your system, comment out line 12 in the file “paperplots.mplstyle”. If they are present, make sure to change the line “seriflist = “ to point to where the Liberation Serif fonts are present on the system.
+2. Download the necessary python files from this link:
+https://doi.org/10.5281/zenodo.17633080
+3. Now, you’re ready to run the Jupyter notebook script to plot and print the model data. Prompts will ask you to input the path to the time-height output for various simulations. The notebook will throw an exception when reaching the section for plotting updraft-differentiated properties. This behavior is intentional, as this plotting routine requires reading in dozens of files of 3D output which is quite time and memory consuming. When you’re ready, you can resume the notebook from the cell immediately below to do this plotting. Be aware that this portion of the notebook may take between 10 and 20 minutes to run.
+4. Done!
